@@ -1,13 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  min-height: 100vh;
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  @apply bg-off-white;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+nav ul li {
+  @apply my-4 text-lg text-very-dark-blue md:my-0 md:ml-[2.5rem] md:text-sm md:text-dark-gray-blue;
+}
+
+p {
+  @apply text-dark-gray-blue;
+}
+
+#side p {
+  @apply text-gray-blue;
+}
+
+#side h3 {
+  @apply mb-2 text-lg font-700 transition-colors duration-150 hover:cursor-pointer hover:text-soft-orange;
+}
+
+hr {
+  @apply border-dark-gray-blue;
+}
+
+.image {
+  grid-area: image;
+}
+
+#title {
+  grid-area: title;
+}
+
+#main-text {
+  grid-area: main-text;
+}
+
+#side {
+  grid-area: side;
+}
+
+#bottom1 {
+  grid-area: bottom1;
+}
+
+#bottom2 {
+  grid-area: bottom2;
+}
+
+#bottom3 {
+  grid-area: bottom3;
+}
+
+#bottom1,
+#bottom2,
+#bottom3 {
+  @apply lg:mt-3;
+}
+
+main {
+  display: grid;
+  gap: 2rem;
+  grid-auto-columns: 1fr;
+  grid-template-areas:
+    "image"
+    "title"
+    "main-text"
+    "side"
+    "bottom1"
+    "bottom2"
+    "bottom3";
+}
+
+@media (min-width: 768px) {
+  main {
+    grid-template-areas:
+      "image image side"
+      "title main-text side"
+      "bottom1 bottom2 bottom3";
+  }
 }

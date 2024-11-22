@@ -16,7 +16,7 @@ body {
 }
 
 nav ul li {
-  @apply my-4 text-lg text-very-dark-blue md:my-0 md:ml-[2.5rem] md:text-sm md:text-dark-gray-blue;
+  @apply my-4 text-lg text-very-dark-blue transition-colors duration-150 hover:cursor-pointer hover:text-soft-orange focus:text-soft-orange md:my-0 md:ml-[2.5rem] md:text-sm md:text-dark-gray-blue;
 }
 
 p {
@@ -28,7 +28,7 @@ p {
 }
 
 #side h3 {
-  @apply mb-2 text-lg font-700 transition-colors duration-150 hover:cursor-pointer hover:text-soft-orange;
+  @apply mb-2 text-lg font-700 transition-colors duration-150 hover:cursor-pointer hover:text-soft-orange focus:text-soft-orange;
 }
 
 hr {
@@ -63,10 +63,16 @@ hr {
   grid-area: bottom3;
 }
 
-#bottom1,
-#bottom2,
-#bottom3 {
+.bottom {
   @apply lg:mt-3;
+}
+
+.bottom img {
+  @apply h-auto w-[6rem] object-cover;
+}
+
+.bottom h4 {
+  @apply transition-colors duration-150 hover:cursor-pointer hover:text-soft-red focus:text-soft-red;
 }
 
 main {
@@ -89,5 +95,11 @@ main {
       "image image side"
       "title main-text side"
       "bottom1 bottom2 bottom3";
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  body {
+    scroll-behavior: smooth;
   }
 }

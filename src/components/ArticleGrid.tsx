@@ -15,13 +15,14 @@ export default function ArticleGrid() {
           />
         </picture>
 
-        {/* Main title and text */}
+        {/* Main title */}
         <h1
           id="title"
           className="text-[3rem] font-800 leading-[3rem] text-very-dark-blue"
         >
           The Bright Future of Web 3.0?
         </h1>
+        {/* Main text */}
         <div id="main-text" className="flex flex-col justify-between">
           <p className="leading-6">
             We dive into the next evolution of the web that claims to put the

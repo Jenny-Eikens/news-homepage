@@ -20,7 +20,10 @@ function App() {
             Frontend Mentor
           </a>
           . Coded by{" "}
-          <a href="https://github.com/Jenny-Eikens">Jennifer Eikens</a>.
+          <a href="https://github.com/Jenny-Eikens" target="_blank">
+            Jennifer Eikens
+          </a>
+          .
         </div>
       </footer>
     </>

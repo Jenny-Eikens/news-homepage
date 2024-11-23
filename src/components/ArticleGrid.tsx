@@ -1,7 +1,7 @@
 export default function ArticleGrid() {
   return (
     <>
-      <main>
+      <div className="main-content">
         {/* Main image */}
         <picture className="image">
           <source
@@ -115,7 +115,7 @@ export default function ArticleGrid() {
             </p>
           </div>
         </div>
-      </main>
+      </div>
     </>
   );
 }

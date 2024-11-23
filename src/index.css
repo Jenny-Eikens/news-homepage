@@ -4,10 +4,13 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
   width: 100vw;
   min-height: 100vh;
   font-size: 15px;
@@ -75,7 +78,11 @@ hr {
   @apply transition-colors duration-150 hover:cursor-pointer hover:text-soft-red focus:text-soft-red;
 }
 
-main {
+.attribution a {
+  @apply text-soft-red underline;
+}
+
+.main-content {
   display: grid;
   gap: 2rem;
   grid-auto-columns: 1fr;
@@ -90,7 +97,7 @@ main {
 }
 
 @media (min-width: 768px) {
-  main {
+  .main-content {
     grid-template-areas:
       "image image side"
       "title main-text side"

@@ -1,4 +1,3 @@
-import React from "react";
 import { useState } from "react";
 import ArticleGrid from "./components/ArticleGrid";
 import NavBar from "./components/NavBar";

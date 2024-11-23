@@ -40,7 +40,9 @@ export default function NavBar({ menuOpen, setMenuOpen }: NavBarProps) {
     <>
       <header className="relative mb-3 flex items-center justify-between overflow-hidden py-4">
         <span className="hover:cursor-pointer">
-          <a href="#">{logo}</a>
+          <a href="#" aria-label="Link to homepage">
+            {logo}
+          </a>
         </span>
 
         {/* Menu toggling button */}

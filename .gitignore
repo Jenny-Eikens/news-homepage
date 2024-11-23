@@ -12,7 +12,8 @@
 /build
 style-guide.md
 /design/
-/assets/
+/assets
+
 
 # misc
 .DS_Store

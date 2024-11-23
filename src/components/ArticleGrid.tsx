@@ -9,7 +9,7 @@ export default function ArticleGrid() {
             media="(min-width: 768px)"
           />
           <img
-            src="{`${process.env.PUBLIC_URL}/images/image-web-3-mobile.jpg"
+            src={`${process.env.PUBLIC_URL}/images/image-web-3-mobile.jpg`}
             alt="image of colorful building blocks"
             className="h-full w-full object-cover"
           />

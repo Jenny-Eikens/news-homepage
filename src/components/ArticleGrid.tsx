@@ -5,11 +5,11 @@ export default function ArticleGrid() {
         {/* Main image */}
         <picture className="image">
           <source
-            srcSet="/images/image-web-3-desktop.jpg"
+            srcSet="{`${process.env.PUBLIC_URL}/images/image-web-3-desktop.jpg"
             media="(min-width: 768px)"
           />
           <img
-            src="/images/image-web-3-mobile.jpg"
+            src="{`${process.env.PUBLIC_URL}/images/image-web-3-mobile.jpg"
             alt="image of colorful building blocks"
             className="h-full w-full object-cover"
           />
@@ -71,7 +71,10 @@ export default function ArticleGrid() {
 
         {/* Bottom articles */}
         <div id="bottom1" className="bottom flex items-stretch gap-4">
-          <img src="/images/image-retro-pcs.jpg" alt="Retro PC" />
+          <img
+            src="{`${process.env.PUBLIC_URL}/images/image-retro-pcs.jpg"
+            alt="Retro PC"
+          />
           <div className="flex h-full flex-col justify-between">
             <p className="text-3xl font-700 text-soft-red">01</p>
             <h4 className="text-lg font-800 text-very-dark-blue">
@@ -84,7 +87,7 @@ export default function ArticleGrid() {
         </div>
         <div id="bottom2" className="bottom flex items-stretch gap-4">
           <img
-            src="/images/image-top-laptops.jpg"
+            src="{`${process.env.PUBLIC_URL}/images/image-top-laptops.jpg"
             alt="Image of a laptop keyboard"
           />
           <div className="flex h-full flex-col justify-between">
@@ -99,7 +102,7 @@ export default function ArticleGrid() {
         </div>
         <div id="bottom3" className="bottom flex items-stretch gap-4">
           <img
-            src="/images/image-gaming-growth.jpg"
+            src="{`${process.env.PUBLIC_URL}/images/image-gaming-growth.jpg"
             alt="Image of a gaming controller"
           />
           <div className="flex h-full flex-col justify-between">

@@ -28,7 +28,7 @@ export default function ArticleGrid() {
             power of the platforms back into the hands of the people. But is it
             really fulfilling its promise?
           </p>
-          <button className="mt-6 w-full max-w-[200px] bg-soft-red p-4 text-sm font-700 tracking-[0.3em] text-very-dark-blue transition-colors duration-150 hover:cursor-pointer hover:bg-very-dark-blue hover:text-off-white focus:bg-very-dark-blue focus:text-off-white md:mt-0 lg:mt-8">
+          <button className="mt-8 w-full max-w-[200px] bg-soft-red p-4 text-sm font-700 tracking-[0.3em] text-very-dark-blue transition-colors duration-150 hover:cursor-pointer hover:bg-very-dark-blue hover:text-off-white focus:bg-very-dark-blue focus:text-off-white md:mt-0 lg:mt-8">
             READ MORE
           </button>
         </div>

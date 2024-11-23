@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Jenny-Eikens/news-homepage.git/static/css/main.88b0784d.css",
-    "main.js": "/Jenny-Eikens/news-homepage.git/static/js/main.9a605ad1.js",
-    "static/js/453.a8ce0bdb.chunk.js": "/Jenny-Eikens/news-homepage.git/static/js/453.a8ce0bdb.chunk.js",
-    "index.html": "/Jenny-Eikens/news-homepage.git/index.html",
-    "main.88b0784d.css.map": "/Jenny-Eikens/news-homepage.git/static/css/main.88b0784d.css.map",
-    "main.9a605ad1.js.map": "/Jenny-Eikens/news-homepage.git/static/js/main.9a605ad1.js.map",
-    "453.a8ce0bdb.chunk.js.map": "/Jenny-Eikens/news-homepage.git/static/js/453.a8ce0bdb.chunk.js.map"
+    "main.css": "/news-homepage/static/css/main.88b0784d.css",
+    "main.js": "/news-homepage/static/js/main.a0b9b8a1.js",
+    "static/js/453.a8ce0bdb.chunk.js": "/news-homepage/static/js/453.a8ce0bdb.chunk.js",
+    "index.html": "/news-homepage/index.html",
+    "main.88b0784d.css.map": "/news-homepage/static/css/main.88b0784d.css.map",
+    "main.a0b9b8a1.js.map": "/news-homepage/static/js/main.a0b9b8a1.js.map",
+    "453.a8ce0bdb.chunk.js.map": "/news-homepage/static/js/453.a8ce0bdb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.88b0784d.css",
-    "static/js/main.9a605ad1.js"
+    "static/js/main.a0b9b8a1.js"
   ]
 }

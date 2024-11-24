@@ -42,14 +42,14 @@ export default function ArticleGrid() {
           <h2 className="text-[2rem] font-700 tracking-wider text-soft-orange">
             New
           </h2>
-          <div className="py-6">
+          <div>
             <h3>
               <a href="#">Hydrogen VS Electric Cars</a>
             </h3>
             <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
           </div>
           <hr />
-          <div className="py-6">
+          <div>
             <h3>
               <a href="#">The Downsides of AI Artistry</a>
             </h3>
@@ -59,7 +59,7 @@ export default function ArticleGrid() {
             </p>
           </div>
           <hr />
-          <div className="py-6">
+          <div>
             <h3>
               <a href="#">Is VC Funding Drying Up?</a>
             </h3>
@@ -71,14 +71,14 @@ export default function ArticleGrid() {
         </div>
 
         {/* Bottom articles */}
-        <div id="bottom1" className="bottom flex items-stretch gap-4">
+        <div id="bottom1" className="bottom">
           <img
             src={`${process.env.PUBLIC_URL}/images/image-retro-pcs.jpg`}
             alt="Retro PC"
           />
-          <div className="flex h-full flex-col justify-between">
+          <div>
             <p className="text-3xl font-700 text-soft-red">01</p>
-            <h4 className="text-lg font-800 text-very-dark-blue">
+            <h4>
               <a href="#">Reviving Retro PCs</a>
             </h4>
             <p className="leading-6">
@@ -86,14 +86,14 @@ export default function ArticleGrid() {
             </p>
           </div>
         </div>
-        <div id="bottom2" className="bottom flex items-stretch gap-4">
+        <div id="bottom2" className="bottom">
           <img
             src={`${process.env.PUBLIC_URL}/images/image-top-laptops.jpg`}
             alt="Image of a laptop keyboard"
           />
-          <div className="flex h-full flex-col justify-between">
+          <div>
             <p className="text-3xl font-700 text-soft-red">02</p>
-            <h4 className="text-lg font-800 text-very-dark-blue">
+            <h4>
               <a href="#">Top 10 Laptops of 2022</a>
             </h4>
             <p className="leading-6">
@@ -101,14 +101,14 @@ export default function ArticleGrid() {
             </p>
           </div>
         </div>
-        <div id="bottom3" className="bottom flex items-stretch gap-4">
+        <div id="bottom3" className="bottom">
           <img
             src={`${process.env.PUBLIC_URL}/images/image-gaming-growth.jpg`}
             alt="Image of a gaming controller"
           />
-          <div className="flex h-full flex-col justify-between">
+          <div>
             <p className="text-3xl font-700 text-soft-red">03</p>
-            <h4 className="text-lg font-800 text-very-dark-blue">
+            <h4>
               <a href="#">The Growth of Gaming</a>
             </h4>
             <p className="leading-6">

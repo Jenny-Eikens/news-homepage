@@ -66,16 +66,24 @@ hr {
   grid-area: bottom3;
 }
 
+#side div {
+  @apply py-6;
+}
+
 .bottom {
-  @apply lg:mt-3;
+  @apply flex items-stretch gap-4 lg:mt-3;
 }
 
 .bottom img {
   @apply h-auto w-[6rem] object-cover;
 }
 
+.bottom div {
+  @apply flex h-full flex-col justify-between;
+}
+
 .bottom h4 {
-  @apply transition-colors duration-150 hover:cursor-pointer hover:text-soft-red focus:text-soft-red;
+  @apply text-lg font-800 text-very-dark-blue transition-colors duration-150 hover:cursor-pointer hover:text-soft-red focus:text-soft-red;
 }
 
 .attribution a {

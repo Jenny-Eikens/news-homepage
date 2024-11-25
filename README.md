@@ -76,7 +76,7 @@ main {
 
 ### Continued development
 
-By far the biggest challenge for me in this project was the nav bar. I am not super confident in the realm of positioning in general and responsive positioning especially. It took me a while to get to the point where I could display the nav at the top on bigger screens and have it slide in from the side on smaller screens. I also had never previously worked with an overlay for when the side menu is open, so that was a challenge as well. Overall, I'd like to keep working on my CSS grid skills and get more confident in positioning elements.
+By far the biggest challenge for me in this project was the nav bar. I am not super confident in the realm of positioning in general and conditional positioning especially. It took me a while to get to the point where I could display the nav at the top on bigger screens and have it slide in from the side on smaller screens. I also had never previously worked with an overlay for when the side menu is open, so that was a challenge as well. Overall, I'd like to keep working on my CSS grid skills and get more confident in positioning elements.
 I also noticed that I don't yet fully understand how to pass variables and functions down as props in React, which is something I would like to work on in future projects.
 Another thing I haven't done before but would like to learn is how to implement dark mode.
 

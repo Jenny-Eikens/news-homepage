@@ -49,12 +49,9 @@ export default function NavBar({ menuOpen, setMenuOpen }: NavBarProps) {
         <button
           className="relative right-2 top-0 z-50 pr-2 md:hidden"
           onClick={() => setMenuOpen(!menuOpen)}
+          aria-label={menuOpen ? "Close menu" : "Open menu"}
         >
-          {menuOpen ? (
-            <div aria-label="Close menu">{close}</div>
-          ) : (
-            <div aria-label="Open menu">{hamburger}</div>
-          )}
+          {menuOpen ? close : hamburger}
         </button>
 
         {/* Overlay */}

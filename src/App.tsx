@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      <div className="m-auto h-auto min-h-[100vh] w-full max-w-[1200px] p-3 lg:w-[90vw] lg:p-[2rem] xl:w-[80vw] xl:p-[3rem]">
+      <div className="m-auto h-auto min-h-[100vh] w-[100vw] max-w-[1200px] p-3 lg:w-[90vw] lg:p-[2rem] xl:w-[80vw] xl:p-[3rem]">
         <NavBar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <main>
           <ArticleGrid />

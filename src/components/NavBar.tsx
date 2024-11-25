@@ -38,7 +38,7 @@ export default function NavBar({ menuOpen, setMenuOpen }: NavBarProps) {
 
   return (
     <>
-      <header className="relative mb-3 flex items-center justify-between overflow-hidden py-4">
+      <header className="relative mb-6 flex items-center justify-between overflow-hidden py-4">
         <span className="hover:cursor-pointer">
           <a href="#" aria-label="Link to homepage">
             {logo}

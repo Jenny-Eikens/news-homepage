@@ -18,13 +18,13 @@ export default function ArticleGrid() {
         {/* Main title */}
         <h1
           id="title"
-          className="text-[3rem] font-800 leading-[3rem] text-very-dark-blue"
+          className="text-[4rem] font-800 leading-[4rem] text-very-dark-blue"
         >
           The Bright Future of Web 3.0?
         </h1>
         {/* Main text */}
-        <div id="main-text" className="flex flex-col justify-between">
-          <p className="leading-6">
+        <div id="main-text" className="flex flex-col justify-between pr-1">
+          <p className="leading-7">
             We dive into the next evolution of the web that claims to put the
             power of the platforms back into the hands of the people. But is it
             really fulfilling its promise?
@@ -37,9 +37,9 @@ export default function ArticleGrid() {
         {/* Side articles */}
         <div
           id="side"
-          className="my-3 flex flex-col justify-evenly bg-very-dark-blue px-6 py-4 text-left text-off-white md:my-0"
+          className="my-3 flex flex-col justify-between bg-very-dark-blue px-6 py-4 text-left text-off-white md:my-0"
         >
-          <h2 className="text-[2rem] font-700 tracking-wider text-soft-orange">
+          <h2 className="text-[3rem] font-700 tracking-wider text-soft-orange">
             New
           </h2>
           <div>

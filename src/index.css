@@ -19,7 +19,7 @@ body {
 }
 
 nav ul li {
-  @apply my-4 text-lg text-very-dark-blue transition-colors duration-150 hover:cursor-pointer hover:text-soft-orange focus:text-soft-orange md:my-0 md:ml-[2.5rem] md:text-sm md:text-dark-gray-blue;
+  @apply my-4 text-lg text-very-dark-blue transition-colors duration-150 hover:cursor-pointer hover:text-soft-orange focus:text-soft-orange md:my-0 md:ml-[2.5rem] md:text-base md:text-dark-gray-blue;
 }
 
 p {
@@ -31,11 +31,35 @@ p {
 }
 
 #side h3 {
-  @apply mb-2 text-lg font-700 transition-colors duration-150 hover:cursor-pointer hover:text-soft-orange focus:text-soft-orange;
+  @apply mb-2 text-xl font-700 transition-colors duration-150 hover:cursor-pointer hover:text-soft-orange focus:text-soft-orange;
 }
 
 hr {
   @apply border-dark-gray-blue;
+}
+
+#side div {
+  @apply py-6 first-of-type:pt-4 last-of-type:pb-4;
+}
+
+.bottom {
+  @apply flex items-stretch gap-4 lg:mt-8;
+}
+
+.bottom img {
+  @apply h-auto w-[6rem] object-cover;
+}
+
+.bottom div {
+  @apply flex h-full flex-col justify-between;
+}
+
+.bottom h4 {
+  @apply text-lg font-800 text-very-dark-blue transition-colors duration-150 hover:cursor-pointer hover:text-soft-red focus:text-soft-red;
+}
+
+.attribution a {
+  @apply text-soft-red underline;
 }
 
 .image {
@@ -64,30 +88,6 @@ hr {
 
 #bottom3 {
   grid-area: bottom3;
-}
-
-#side div {
-  @apply py-6;
-}
-
-.bottom {
-  @apply flex items-stretch gap-4 lg:mt-3;
-}
-
-.bottom img {
-  @apply h-auto w-[6rem] object-cover;
-}
-
-.bottom div {
-  @apply flex h-full flex-col justify-between;
-}
-
-.bottom h4 {
-  @apply text-lg font-800 text-very-dark-blue transition-colors duration-150 hover:cursor-pointer hover:text-soft-red focus:text-soft-red;
-}
-
-.attribution a {
-  @apply text-soft-red underline;
 }
 
 .main-content {

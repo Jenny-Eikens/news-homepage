@@ -1,0 +1,28 @@
+Components:
+
+nav ul
+- make list of navigation elements to map over 
+
+    NavItem component:
+    const navitems = [
+      {
+        id: 0,
+        title: "Home", 
+      } ...
+    ]
+    return (
+      <li>
+        <a href="#">{item.title}</a>
+      </li>
+    )
+
+    NavBar component:
+    return (
+      <ul>
+        {navitems.map((item) => (
+          <NavItem 
+            title={item.title}
+          />
+        ))}
+      </ul>
+    )

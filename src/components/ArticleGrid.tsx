@@ -1,4 +1,16 @@
-export default function ArticleGrid() {
+interface ContentProps {
+  mainTitle: string;
+  mainArticle: string;
+  sideArticles: any;
+  bottomArticles: any;
+}
+
+export default function ArticleGrid({
+  mainTitle,
+  mainArticle,
+  sideArticles,
+  bottomArticles,
+}: ContentProps) {
   return (
     <>
       <div className="main-content">
@@ -20,19 +32,18 @@ export default function ArticleGrid() {
           id="title"
           className="text-[4rem] font-800 leading-[4rem] text-very-dark-blue"
         >
-          The Bright Future of Web 3.0?
+          {mainTitle}
         </h1>
-        {/* Main text */}
-        <div id="main-text" className="flex flex-col justify-between pr-1">
-          <p className="leading-7">
-            We dive into the next evolution of the web that claims to put the
-            power of the platforms back into the hands of the people. But is it
-            really fulfilling its promise?
-          </p>
-          <button className="mt-8 w-full max-w-[200px] bg-soft-red p-4 text-sm font-700 tracking-[0.3em] text-very-dark-blue transition-colors duration-150 hover:cursor-pointer hover:bg-very-dark-blue hover:text-off-white focus:bg-very-dark-blue focus:text-off-white md:mt-0 lg:mt-8">
+        {/* Main article */}
+        <article id="main-text" className="flex flex-col justify-between pr-1">
+          <p className="leading-7">{mainArticle}</p>
+          <a
+            href="#"
+            className="mt-8 w-full max-w-[200px] bg-soft-red p-4 text-center text-sm font-700 tracking-[0.3em] text-very-dark-blue transition-colors duration-150 hover:cursor-pointer hover:bg-very-dark-blue hover:text-off-white focus:bg-very-dark-blue focus:text-off-white md:mt-0 lg:mt-8"
+          >
             READ MORE
-          </button>
-        </div>
+          </a>
+        </article>
 
         {/* Side articles */}
         <div
@@ -42,80 +53,37 @@ export default function ArticleGrid() {
           <h2 className="text-[3rem] font-700 tracking-wider text-soft-orange">
             New
           </h2>
-          <div>
-            <h3>
-              <a href="#">Hydrogen VS Electric Cars</a>
-            </h3>
-            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
-          </div>
-          <hr />
-          <div>
-            <h3>
-              <a href="#">The Downsides of AI Artistry</a>
-            </h3>
-            <p>
-              What are the possible adverse effects of on-demand AI image
-              generation?
-            </p>
-          </div>
-          <hr />
-          <div>
-            <h3>
-              <a href="#">Is VC Funding Drying Up?</a>
-            </h3>
-            <p>
-              Private funding by VC firms is down 50% YOY. We take a look at
-              what that means.
-            </p>
-          </div>
+          {sideArticles.map((article: any, index: number) => (
+            <article key={index}>
+              <h3>
+                <a href="#">{article.title}</a>
+              </h3>
+              <p>{article.content}</p>
+              {index !== sideArticles.length - 1 && (
+                <hr className="border-dark-gray-blue pb-6" />
+              )}
+            </article>
+          ))}
         </div>
 
         {/* Bottom articles */}
-        <div id="bottom1" className="bottom">
-          <img
-            src={`${process.env.PUBLIC_URL}/images/image-retro-pcs.jpg`}
-            alt="Retro PC"
-          />
-          <div>
-            <p className="text-3xl font-700 text-soft-red">01</p>
-            <h4>
-              <a href="#">Reviving Retro PCs</a>
-            </h4>
-            <p className="leading-6">
-              What happens when old PCs are given modern upgrades?
-            </p>
-          </div>
-        </div>
-        <div id="bottom2" className="bottom">
-          <img
-            src={`${process.env.PUBLIC_URL}/images/image-top-laptops.jpg`}
-            alt="Image of a laptop keyboard"
-          />
-          <div>
-            <p className="text-3xl font-700 text-soft-red">02</p>
-            <h4>
-              <a href="#">Top 10 Laptops of 2022</a>
-            </h4>
-            <p className="leading-6">
-              Our best picks for various needs and budgets.
-            </p>
-          </div>
-        </div>
-        <div id="bottom3" className="bottom">
-          <img
-            src={`${process.env.PUBLIC_URL}/images/image-gaming-growth.jpg`}
-            alt="Image of a gaming controller"
-          />
-          <div>
-            <p className="text-3xl font-700 text-soft-red">03</p>
-            <h4>
-              <a href="#">The Growth of Gaming</a>
-            </h4>
-            <p className="leading-6">
-              How the pandemic has sparked fresh opportunities.
-            </p>
-          </div>
-        </div>
+        {bottomArticles.map((article: any) => (
+          <article id={article.id} className="bottom">
+            <img
+              src={`${process.env.PUBLIC_URL}${article.image.src}`}
+              alt={article.image.alt}
+            />
+            <div>
+              <p className="text-3xl font-700 text-soft-red">
+                {article.number}
+              </p>
+              <h4>
+                <a href="#">{article.title}</a>
+              </h4>
+              <p className="leading-6">{article.content}</p>
+            </div>
+          </article>
+        ))}
       </div>
     </>
   );

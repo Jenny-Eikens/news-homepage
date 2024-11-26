@@ -11,7 +11,6 @@ body {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  width: 100vw;
   min-height: 100vh;
   font-size: 15px;
   font-family: "Inter", sans-serif;
@@ -27,19 +26,11 @@ p {
 }
 
 #side p {
-  @apply text-gray-blue;
+  @apply pb-6 text-gray-blue;
 }
 
 #side h3 {
   @apply mb-2 text-xl font-700 transition-colors duration-150 hover:cursor-pointer hover:text-soft-orange focus:text-soft-orange;
-}
-
-hr {
-  @apply border-dark-gray-blue;
-}
-
-#side div {
-  @apply py-6 first-of-type:pt-4 last-of-type:pb-4;
 }
 
 .bottom {

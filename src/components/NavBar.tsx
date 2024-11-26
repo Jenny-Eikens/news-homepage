@@ -1,3 +1,5 @@
+import { navItems } from "./data";
+
 interface NavBarProps {
   menuOpen: boolean;
   setMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
@@ -66,21 +68,11 @@ export default function NavBar({ menuOpen, setMenuOpen }: NavBarProps) {
           className={`fixed right-0 top-0 flex h-full w-[70vw] max-w-[300px] flex-col bg-off-white transition-transform duration-[250ms] ${menuOpen ? "translate-x-0" : "translate-x-full"} md:relative md:left-auto md:top-auto md:flex md:h-auto md:w-full md:max-w-[500px] md:translate-x-0 md:justify-end`}
         >
           <ul className="ml-2 mt-20 list-none p-4 md:m-0 md:flex md:flex-row md:flex-wrap md:justify-end md:p-0">
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">New</a>
-            </li>
-            <li>
-              <a href="#">Popular</a>
-            </li>
-            <li>
-              <a href="#">Trending</a>
-            </li>
-            <li>
-              <a href="#">Categories</a>
-            </li>
+            {navItems.map((item, index) => (
+              <li key={index}>
+                <a href="#">{item.title}</a>
+              </li>
+            ))}
           </ul>
         </nav>
       </header>

@@ -82,6 +82,6 @@ Another thing I haven't done before but would like to learn is how to implement 
 
 ## Author
 
-- Website - [Jennifer Eikens](https://jenny-eikens.github.io/portfolio-page/#projects)
+- Website - [Jennifer Eikens](https://jennifereikens.com)
 - Frontend Mentor - [@Jenny-Eikens](https://www.frontendmentor.io/profile/Jenny-Eikens)
 - GitHub - [Jenny-Eikens](https://github.com/Jenny-Eikens)
